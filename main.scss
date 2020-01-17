@@ -154,8 +154,18 @@ body {
 .about-wrap {
 	display: flex;
   margin: 0 5rem 5rem 5rem;
+  @include pc {
+    flex-wrap: wrap;
+  }
+  @include tablets {
+    margin: 0 3rem 3rem 3rem;
+  }
   .about-img {
     margin: 2rem 2rem 2rem auto;
+    @include pc {
+    display: block;
+		margin: auto;
+    }
     img {
       width: 200px;
       height: 200px;
@@ -164,9 +174,15 @@ body {
   }
   .about-text {
     margin: 0 auto;
+    @include pc {
+      margin: 2rem auto;
+    }
     p {
       font-size: 20px;
       line-height: 1.5;
+    @include phones {
+      font-size: 90%;
+    }
     }
   }
 }
@@ -191,16 +207,36 @@ body {
 .works-item {
   display: flex;
   margin: 0 10rem 1rem 10rem;
+  @include pc {
+    margin: 0;
+  }
+  @include phones {
+    margin: 0;
+		display: inline;
+  }
   .works-item-1 {
     width: 50%;
     margin: auto;
+    @include phones {
+      width: 65%;
+      margin: auto;
+    }
     img {
       display: block;
       width: 300px;
       height: 400px;
       margin: 0 auto;
       opacity: .5;
-
+      @include tablets {
+        width: 250px;
+        height: 350px;
+        object-fit: cover;
+      }
+      @include phones {
+        width: 200px;
+        height: 300px;
+        object-fit: cover;
+      }
     }
     p {
       margin: 2rem;
@@ -213,6 +249,9 @@ body {
     height: 2rem;
     margin-bottom: 5rem;
     text-align: center;
+    @include tablets {
+      margin-bottom: 3rem;
+    }
     .works-link-read-more {
       position: relative;
       z-index: 1;
@@ -259,6 +298,10 @@ body {
   a {
     display: block;
     margin-bottom: 3rem;
+    @include phones {
+      margin: 1rem auto 2rem auto;
+      font-size: 90%;
+    }
   }
 }
 
@@ -286,10 +329,10 @@ body {
 // 	.about_wrap {
 //     flex-wrap: wrap;
 // 	}
-// 	.about_img {
-//     display: block;
-// 		margin: auto;
-// 	}
+	// .about_img {
+  //   display: block;
+	// 	margin: auto;
+	// }
 // 	.about_text {
 // 		margin: 2rem auto;
 // 	}
@@ -299,46 +342,46 @@ body {
 // }
 
 
-// /* tablets, 768px and up */
+/* tablets, 768px and up */
 // @media (max-width: 768px) {
-// 	.about_wrap {
-// 		margin: 0 3rem 3rem 3rem;
-// 	}
-// 	.works_item {
-// 		margin: 0;
-// 	}
-// 	.works_item img {
-// 		width: 250px;
-// 		height: 350px;
-// 		object-fit: cover;
-// 	}
-// 	.works_link {
-// 		margin-bottom: 3rem;
-// 	}
+	// .about_wrap {
+	// 	margin: 0 3rem 3rem 3rem;
+	// }
+	// .works_item {
+	// 	margin: 0;
+	// }
+	// .works_item img {
+	// 	width: 250px;
+	// 	height: 350px;
+	// 	object-fit: cover;
+	// }
+	// .works_link {
+	// 	margin-bottom: 3rem;
+	// }
 // }
 
-// /* landscape phones, 576px and up */
+/* landscape phones, 576px and up */
 // @media (max-width: 576px) {
 // 	.about_text p {
 // 		font-size: 90%;
 // 	}
-// 	.works_item {
-// 		margin: 0;
-// 		display: inline;
-// 	}
-// 	.works_item_1 {
-//     width: 65%;
-//     margin: auto;
-// 	}
-// 	.works_item img {
-// 		width: 200px;
-// 		height: 300px;
-// 		object-fit: cover;
-// 	}
-// 	.works_item p {
-// 		margin: 1rem auto 2rem auto;
-// 		font-size: 90%;
-// 	}
+	// .works_item {
+	// 	margin: 0;
+	// 	display: inline;
+	// }
+	// .works_item_1 {
+  //   width: 65%;
+  //   margin: auto;
+	// }
+	// .works_item img {
+	// 	width: 200px;
+	// 	height: 300px;
+	// 	object-fit: cover;
+	// }
+	// .works_item p {
+	// 	margin: 1rem auto 2rem auto;
+	// 	font-size: 90%;
+	// }
 // 	.contact_item:last-child {
 // 		font-size: 95%;
 // 	}

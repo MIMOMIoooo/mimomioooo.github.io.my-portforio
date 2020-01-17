@@ -115,8 +115,27 @@ body {
   margin: 0 5rem 5rem 5rem;
 }
 
+@media (max-width: 992px) {
+  .about-wrap {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-wrap {
+    margin: 0 3rem 3rem 3rem;
+  }
+}
+
 .about-wrap .about-img {
   margin: 2rem 2rem 2rem auto;
+}
+
+@media (max-width: 992px) {
+  .about-wrap .about-img {
+    display: block;
+    margin: auto;
+  }
 }
 
 .about-wrap .about-img img {
@@ -129,9 +148,21 @@ body {
   margin: 0 auto;
 }
 
+@media (max-width: 992px) {
+  .about-wrap .about-text {
+    margin: 2rem auto;
+  }
+}
+
 .about-wrap .about-text p {
   font-size: 20px;
   line-height: 1.5;
+}
+
+@media (max-width: 576px) {
+  .about-wrap .about-text p {
+    font-size: 90%;
+  }
 }
 
 /* works ---------------------------------------------------------- */
@@ -173,9 +204,29 @@ body {
   margin: 0 10rem 1rem 10rem;
 }
 
+@media (max-width: 992px) {
+  .works-item {
+    margin: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .works-item {
+    margin: 0;
+    display: inline;
+  }
+}
+
 .works-item .works-item-1 {
   width: 50%;
   margin: auto;
+}
+
+@media (max-width: 576px) {
+  .works-item .works-item-1 {
+    width: 65%;
+    margin: auto;
+  }
 }
 
 .works-item .works-item-1 img {
@@ -184,6 +235,22 @@ body {
   height: 400px;
   margin: 0 auto;
   opacity: .5;
+}
+
+@media (max-width: 768px) {
+  .works-item .works-item-1 img {
+    width: 250px;
+    height: 350px;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 576px) {
+  .works-item .works-item-1 img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+  }
 }
 
 .works-item .works-item-1 p {
@@ -196,6 +263,12 @@ body {
   height: 2rem;
   margin-bottom: 5rem;
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  .works-link {
+    margin-bottom: 3rem;
+  }
 }
 
 .works-link .works-link-read-more {
@@ -267,6 +340,13 @@ body {
   margin-bottom: 3rem;
 }
 
+@media (max-width: 576px) {
+  .contact-item a {
+    margin: 1rem auto 2rem auto;
+    font-size: 90%;
+  }
+}
+
 /* footer ------------------------------------------------------------ */
 .footer-svg svg {
   position: relative;
@@ -284,3 +364,5 @@ body {
 
 /*---Media Queries --*/
 /* desktops, 992px and up */
+/* tablets, 768px and up */
+/* landscape phones, 576px and up */
