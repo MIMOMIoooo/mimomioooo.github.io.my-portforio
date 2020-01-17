@@ -198,14 +198,14 @@ body {
   text-align: center;
 }
 
-.works-link .works-link-github {
+.works-link .works-link-read-more {
   position: relative;
   z-index: 1;
   font-size: 20px;
   cursor: pointer;
 }
 
-.works-link .works-link-github::after {
+.works-link .works-link-read-more::after {
   position: absolute;
   bottom: -4px;
   left: 0;
@@ -219,7 +219,7 @@ body {
   content: "";
 }
 
-.works-link .works-link-github:hover::after {
+.works-link .works-link-read-more:hover::after {
   width: 100%;
 }
 
@@ -268,7 +268,11 @@ body {
 }
 
 /* footer ------------------------------------------------------------ */
-.footer-svg {
+.footer-svg svg {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 10vw;
   transform: scale(-1, -1);
 }
 
