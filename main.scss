@@ -206,10 +206,6 @@ body {
 
 .works-item-wrap {
   display: flex;
-  margin: 0 10rem 1rem 10rem;
-  @include pc {
-    margin: 0;
-  }
   @include phones {
     margin: 0;
 		display: inline;
@@ -219,10 +215,8 @@ body {
   }
   .works-item {
     width: 50%;
-    margin: auto;
     @include phones {
-      width: 65%;
-      margin: auto;
+      width: 100%;
     }
     img {
       display: block;
@@ -230,19 +224,21 @@ body {
       height: 420px;
       margin: 0 auto;
       @include tablets {
-        width: 250px;
+        width: 290px;
         height: 350px;
         object-fit: cover;
       }
       @include phones {
-        width: 200px;
+        width: 300px;
         height: 300px;
         object-fit: cover;
       }
     }
   }
   .works-item-1 {
-    
+    @include phones {
+      margin-bottom: 5rem;
+    }
   }
   .works-item-2 {
     opacity: .5;
@@ -252,8 +248,14 @@ body {
     margin: 2rem;
     font-size: 18px;
     text-align: center;
+    @include tablets {
+      font-size: 85%;
+    }
     p {
       margin-bottom: 2rem;
+      @include tablets {
+        margin-bottom: 1rem;
+      }
     }
     a {
       position: relative;
@@ -308,6 +310,9 @@ body {
       position: relative;
       z-index: 1;
       font-size: 20px;
+      @include tablets {
+        font-size: 95%;
+      }
       cursor: pointer;
       &::after {
         position: absolute;
@@ -357,6 +362,11 @@ body {
     @include phones {
       margin: 1rem auto 2rem auto;
       font-size: 90%;
+    }
+  }
+  p {
+    @include tablets {
+    font-size: 1rem;
     }
   }
 }
