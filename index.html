@@ -11,6 +11,10 @@
   <link rel="stylesheet" type="text/css" href="main.css">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script> -->
+
   <!-- FontAwesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link rel="icon" href="./img/favicon.ico">
@@ -71,22 +75,46 @@
     <div class="works-title">
       <h2>Works</h2>
     </div>
-    <div class="works-item">
-      <div class="works-item-1">
-        <img src="./img/coming.soon1.png" alt="架空のサイト（準備中です）">
-        <p>制作時間○○時間<br>
-          HTML/CSS/jQuery
-        </p>
+    <div class="works-item-wrap">
+      <div class="works-item works-item-1 content">
+        <a class="js-modal-open" href="" data-target="modal01">
+          <img src="./img/corporate01.jpg" alt="架空のコーポレートサイト">
+        </a>
+        <div class="works-item-about">
+          <p>制作時間31.5時間<br>
+            HTML/CSS/Bootstrap
+          </p>
+          <a href="https://mimomioooo.github.io/corporate01/" target="_blank" rel="noopener noreferrer">webで見る</a>
+        </div>
       </div>
-      <div class="works-item-1">
-        <img src="./img/coming.soon1.png" alt="架空のサイト（準備中です）">
-        <p>制作時間○○時間<br>
-          HTML/CSS/jQuery
-        </p>
+      <div class="works-item works-item-2 content">
+        <!-- <a class="js-modal-open" href="" data-target="modal02"> -->
+          <img src="./img/coming.soon1.png" alt="架空のサイト（準備中です）">
+        <!-- </a> -->
+        <div class="works-item-about">
+          <p>制作時間○○時間<br>
+            HTML/CSS/jQuery
+          </p>
+          <a target="_blank" rel="noopener noreferrer">webで見る</a>
+        </div>
+      </div>
+      <!-- modalで表示したいコンテンツ -->
+      <div id="modal01" class="modal js-modal">
+        <div class="modal--bg js-modal-close"></div>
+        <div class="modal--content">
+          <img src="./img/mimomioooo-github-io-corporate01.png" alt="架空のコーポレートサイト">
+          <a class="js-modal-close" href="">閉じる</a>
+        </div>
+      <!-- <div id="modal02" class="modal js-modal">
+        <div class="modal--bg js-modal-close"></div>
+        <div class="modal--content">
+          <a class="js-modal-close" href="">閉じる</a>
+          <img src="./img/" alt="架空のサイト">
+        </div> -->
       </div>
     </div>
     <div class="works-link">
-      <span class="works-link-read-more">詳しく見る(準備中)</span>
+      <span class="works-link-read-more"><a href="https://fori.io/mimomioooo-c" target="_blank" rel="noopener noreferrer">もっと作品を見る(foriio.com)</a></span>
     </div>
   </section>
   <!-- contact -->
@@ -121,6 +149,21 @@
         if(this.id != 'navbarDropdown'){
           $('.navbar-collapse').collapse('hide');
         }
+    });
+    // modal
+    $(function(){
+        $('.js-modal-open').each(function(){
+            $(this).on('click',function(){
+                var target = $(this).data('target');
+                var modal = document.getElementById(target);
+                $(modal).fadeIn();
+                return false;
+            });
+        });
+        $('.js-modal-close').on('click',function(){
+            $('.js-modal').fadeOut();
+            return false;
+        }); 
     });
   </script>
 
