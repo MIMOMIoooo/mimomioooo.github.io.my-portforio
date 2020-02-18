@@ -205,17 +205,17 @@ body {
   }
 }
 
+// .content {
+//   box-sizing: border-box;
+// }
 .works-item-wrap {
-  display: flex;
+  // display: flex;
   @include phones {
     margin: 0;
 		display: inline;
   }
-  .content {
-    box-sizing: border-box;
-  }
   .works-item {
-    width: 50%;
+    // width: 50%;
     @include phones {
       width: 100%;
     }
@@ -276,30 +276,18 @@ body {
       }
     }
   }
-  // modal
   .modal {
-    display: none;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
-  .modal--bg {
-    background: rgba(0,0,0,0.8);
-    height: 100vh;
-    position: absolute;
-    width: 100%;
-  }
-  .modal--content {
-    background: #fff;
-    left: 50%;
-    padding: 40px;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    width: 60%;
+    .modal-content {
+      height: 90vh;
+      img {
+        width: 800px;
+        height: auto;
+        margin: 0;
+      }
+    }
   }
 }
+
   .works-link {
     height: 2rem;
     margin-bottom: 5rem;
