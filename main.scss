@@ -161,6 +161,9 @@ body {
   @include tablets {
     margin: 0 3rem 3rem 3rem;
   }
+  @media (max-width: 320px)  {
+    margin: 0 1.5rem 0 1.5rem;
+  }
   .about-img {
     margin: 2rem 2rem 2rem auto;
     @include pc {
@@ -181,9 +184,13 @@ body {
     p {
       font-size: 20px;
       line-height: 1.5;
-    @include phones {
-      font-size: 90%;
-    }
+      word-break: break-all;
+      @media (max-width: 768px) {
+        font-size: 16px;
+      }
+      @include phones {
+        font-size: 12px;
+      }
     }
   }
 }
@@ -250,7 +257,7 @@ body {
     font-size: 18px;
     text-align: center;
     @include tablets {
-      font-size: 85%;
+      font-size: 13.5px;
     }
     p {
       margin-bottom: 2rem;
@@ -277,8 +284,17 @@ body {
     }
   }
   .modal {
+    @media (max-width: 375px)  {
+      width: 375px;
+    }
+    @media (max-width: 320px)  {
+      width: 320px;
+    }
     .modal-content {
       height: 90vh;
+      @media (max-width: 320px)  {
+        top: -20px;
+      }
       img {
         width: 800px;
         height: auto;
