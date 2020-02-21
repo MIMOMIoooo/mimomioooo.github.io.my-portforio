@@ -6,14 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="web制作エンジニア ミモミのポートフォリオです。このサイトでは自己紹介、ポートフォリオ、お問い合わせを示しています。">
   <meta name="author" content="MIMOMI.">
-  <meta name="keywords" content="みもみ,MIMOMI.,ポートフォリオ,portfolio,okinawa,coder,web制作">
+  
   <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="main.css">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-  <!-- <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script> -->
 
   <!-- FontAwesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -58,14 +57,14 @@
     <div class="about-wrap">
       <div class="about-img "> <img src="./img/mimomi.jpg" alt="MIMOMIの写真"> </div>
       <div class="about-text">
-        <p>MIMOMI.</p><br>
-        <p>1981年生まれ。沖縄県出身。<br>
+        <p>MIMOMI.</p>
+        <p>1981年生まれ。沖縄県出身。<br class="not">
           高校で美術の先生に恵まれ、物づくりやデザインを学ぶ。<br>
           手芸も手縫いからソーイングまでコツコツ仕上げる事が得意。<br>
           現在は家族で旦那の出身地である多良間島に移住。<br>
         </p><br>
-        <p>スキル<br>
-          HTML/CSS/Sass/JavaScript（jQuery)<br>
+        <p class="skill">スキル</p>
+          <p>HTML/CSS/Sass/JavaScript（jQuery)<br class="not">
           BootStrap
         </p>
       </div>
@@ -168,23 +167,6 @@
           $('.navbar-collapse').collapse('hide');
         }
     });
-
-    
-    /* modal */
-    // $(function(){
-    //     $('.js-modal-open').each(function(){
-    //         $(this).on('click',function(){
-    //             var target = $(this).data('target');
-    //             var modal = document.getElementById(target);
-    //             $(modal).fadeIn();
-    //             return false;
-    //         });
-    //     });
-    //     $('.js-modal-close').on('click',function(){
-    //         $('.js-modal').fadeOut();
-    //         return false;
-    //     }); 
-    // });
 
     /* BootStrap Modal用カスタムJavaSprict */
     $('#myModal').on('shown.bs.modal', function () {

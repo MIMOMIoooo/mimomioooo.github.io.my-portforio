@@ -168,7 +168,7 @@ body {
     flex-wrap: wrap;
   }
   @include tablets {
-    margin: 0 3rem 3rem 3rem;
+    margin: 0 3rem 1rem 3rem;
   }
   @media (max-width: 320px)  {
     margin: 0 1.5rem 0 1.5rem;
@@ -200,6 +200,14 @@ body {
       @include phones {
         font-size: 12px;
       }
+    }
+    br:not(.not) {
+      @include phones {
+        display: none;
+      }
+    }
+    .skill {
+      margin-bottom: 5px;
     }
   }
 }
@@ -238,7 +246,7 @@ body {
       }
       .works-item {
         width: 380px;
-        margin: 0 auto;
+        margin: 0 auto 3rem auto;
         overflow: hidden;
         background-color: #fff;
         border: 1px solid #adb5bd;
@@ -270,11 +278,6 @@ body {
                 object-fit: cover;
               }
             }   
-      }
-      .works-item-1 {
-        @include phones {
-          margin-bottom: 5rem;
-        }
       }
       .works-item-2 {
         opacity: .5;

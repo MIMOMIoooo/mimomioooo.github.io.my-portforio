@@ -141,7 +141,7 @@ body {
 
 @media (max-width: 768px) {
   .about-wrap {
-    margin: 0 3rem 3rem 3rem;
+    margin: 0 3rem 1rem 3rem;
   }
 }
 
@@ -194,6 +194,16 @@ body {
   .about-wrap .about-text p {
     font-size: 12px;
   }
+}
+
+@media (max-width: 576px) {
+  .about-wrap .about-text br:not(.not) {
+    display: none;
+  }
+}
+
+.about-wrap .about-text .skill {
+  margin-bottom: 5px;
 }
 
 /* works ---------------------------------------------------------- */
@@ -261,7 +271,7 @@ body {
 
 .works-section .works-section-wrap .works-item-wrap .works-item {
   width: 380px;
-  margin: 0 auto;
+  margin: 0 auto 3rem auto;
   overflow: hidden;
   background-color: #fff;
   border: 1px solid #adb5bd;
@@ -302,12 +312,6 @@ body {
     width: 300px;
     height: 300px;
     object-fit: cover;
-  }
-}
-
-@media (max-width: 576px) {
-  .works-section .works-section-wrap .works-item-wrap .works-item-1 {
-    margin-bottom: 5rem;
   }
 }
 
