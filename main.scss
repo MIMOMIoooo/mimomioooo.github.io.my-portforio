@@ -240,6 +240,7 @@ body {
     }
     .works-item-wrap {
       display: flex;
+      justify-content: space-evenly;
       margin-bottom: 1rem;
       @include phones {
         margin: 0;
@@ -247,7 +248,8 @@ body {
       }
       .works-item {
         width: 380px;
-        margin: 0 auto 3rem auto;
+        // margin: 0 auto 3rem auto;
+        margin-bottom: 3rem;
         overflow: hidden;
         background-color: #fff;
         border: 1px solid #adb5bd;
