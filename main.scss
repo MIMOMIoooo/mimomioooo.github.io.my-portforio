@@ -239,6 +239,7 @@ body {
       }
     }
     .works-item-wrap {
+      display: flex;
       margin-bottom: 1rem;
       @include phones {
         margin: 0;
@@ -279,9 +280,9 @@ body {
               }
             }   
       }
-      .works-item-2 {
-        opacity: .5;
-      }
+      // .works-item-2 {
+      //   opacity: .5;
+      // }
       // 「webで見る」
       .works-item-about {
         margin: 2rem;

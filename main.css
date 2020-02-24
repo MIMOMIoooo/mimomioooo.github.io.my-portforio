@@ -259,6 +259,7 @@ body {
 }
 
 .works-section .works-section-wrap .works-item-wrap {
+  display: flex;
   margin-bottom: 1rem;
 }
 
@@ -313,10 +314,6 @@ body {
     height: 300px;
     object-fit: cover;
   }
-}
-
-.works-section .works-section-wrap .works-item-wrap .works-item-2 {
-  opacity: .5;
 }
 
 .works-section .works-section-wrap .works-item-wrap .works-item-about {
