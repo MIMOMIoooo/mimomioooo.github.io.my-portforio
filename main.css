@@ -261,7 +261,7 @@ body {
 .works-section .works-section-wrap .works-item-wrap {
   display: flex;
   justify-content: space-evenly;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 }
 
 @media (max-width: 576px) {

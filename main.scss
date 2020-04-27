@@ -241,7 +241,7 @@ body {
     .works-item-wrap {
       display: flex;
       justify-content: space-evenly;
-      margin-bottom: 1rem;
+      margin-bottom: 3rem;
       @include phones {
         margin: 0;
         display: inline;
