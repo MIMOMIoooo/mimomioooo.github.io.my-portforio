@@ -9,8 +9,10 @@ $tetle-border: sold 5px #11a171;
 @mixin common-title {
   width: fit-content;
   margin: 0 auto 5rem auto;
+  padding-top: 5rem;
   @include tablets {
     margin: 0 auto 3rem auto;
+    padding-top: 3rem;
   }
 }
 

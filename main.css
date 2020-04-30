@@ -92,11 +92,13 @@ body {
 .about-title {
   width: fit-content;
   margin: 0 auto 5rem auto;
+  padding-top: 5rem;
 }
 
 @media (max-width: 768px) {
   .about-title {
     margin: 0 auto 3rem auto;
+    padding-top: 3rem;
   }
 }
 
@@ -226,11 +228,13 @@ body {
 .works-section .works-section-wrap .works-title {
   width: fit-content;
   margin: 0 auto 5rem auto;
+  padding-top: 5rem;
 }
 
 @media (max-width: 768px) {
   .works-section .works-section-wrap .works-title {
     margin: 0 auto 3rem auto;
+    padding-top: 3rem;
   }
 }
 
@@ -442,11 +446,13 @@ body {
 .contact-title {
   width: fit-content;
   margin: 0 auto 5rem auto;
+  padding-top: 5rem;
 }
 
 @media (max-width: 768px) {
   .contact-title {
     margin: 0 auto 3rem auto;
+    padding-top: 3rem;
   }
 }
 
