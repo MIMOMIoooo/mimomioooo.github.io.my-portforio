@@ -206,6 +206,10 @@ body {
   margin-bottom: 5px;
 }
 
+.about-wrap .about-text .marker {
+  background: linear-gradient(transparent 60%, #cf9bc6a8 60%);
+}
+
 /* works ---------------------------------------------------------- */
 .works-section .works-to-svg svg {
   position: relative;
@@ -414,7 +418,7 @@ body {
   width: 0%;
   /*最初はwidth:0にする*/
   height: 8px;
-  background: #5ce1e6;
+  background: #cf9bc6a8;
   content: "";
 }
 

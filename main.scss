@@ -209,6 +209,9 @@ body {
     .skill {
       margin-bottom: 5px;
     }
+    .marker {
+      background: linear-gradient(transparent 60%, #cf9bc6a8 60%);
+    }
   }
 }
 
@@ -357,7 +360,7 @@ body {
             transition: all .3s;  /*アニメーションの長さ*/
             width: 0%;    /*最初はwidth:0にする*/
             height: 8px;
-            background: $main-color;
+            background: #cf9bc6a8;
             content:"";
           }
           &:hover::after {
