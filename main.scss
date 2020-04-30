@@ -253,7 +253,6 @@ body {
       }
       .works-item {
         width: 380px;
-        // margin: 0 auto 3rem auto;
         margin-bottom: 3rem;
         overflow: hidden;
         background-color: #fff;
@@ -263,7 +262,6 @@ body {
           width: 100%;
         }
           .works-img {
-            // position: relative;
             display: block;
             width: 380px;
             height: 420px;
@@ -287,10 +285,6 @@ body {
               }
             }   
       }
-      // .works-item-2 {
-      //   opacity: .5;
-      // }
-      // 「webで見る」
       .works-item-about {
         margin: 2rem;
         font-size: 18px;
@@ -345,6 +339,7 @@ body {
     // もっと作品を見る(foriio.com)
       .works-link {
         height: 2rem;
+        padding-bottom: 5rem;
         text-align: center;
         .works-link-read-more {
           position: relative;
@@ -371,6 +366,9 @@ body {
           a {
             text-decoration: none;
             color: $common-font-color;
+            img {
+              margin-left: .5rem;
+            }
           }
         }
       }

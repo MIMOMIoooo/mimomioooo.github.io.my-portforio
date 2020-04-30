@@ -396,6 +396,7 @@ body {
 
 .works-section .works-section-wrap .works-link {
   height: 2rem;
+  padding-bottom: 5rem;
   text-align: center;
 }
 
@@ -433,6 +434,10 @@ body {
 .works-section .works-section-wrap .works-link .works-link-read-more a {
   text-decoration: none;
   color: #424141;
+}
+
+.works-section .works-section-wrap .works-link .works-link-read-more a img {
+  margin-left: .5rem;
 }
 
 .works-section .works-bottom-svg svg {
