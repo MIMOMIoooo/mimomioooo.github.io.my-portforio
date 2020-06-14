@@ -1,15 +1,16 @@
 @charset "UTF-8";
 
 // 変数
-$main-color: #5ce1e6;
+$main-color: #D0F0EC;
 $common-font-color: #424141;
-$tetle-border: sold 5px #11a171;
+// $tetle-border: sold 5px #11a171;
 
 // about,works,contactのタイトル
 @mixin common-title {
   width: fit-content;
   margin: 0 auto 5rem auto;
   padding-top: 5rem;
+  font-family: initial;
   @include tablets {
     margin: 0 auto 3rem auto;
     padding-top: 3rem;
@@ -22,27 +23,27 @@ $tetle-border: sold 5px #11a171;
   padding: .25em 1.5em;
 }
 
-@mixin common-title-text-before-after {
-  display: inline-block;
-  position: absolute;
-  width: 20px;
-  height: 30px;
-  content: " ";
-}
+// @mixin common-title-text-before-after {
+//   display: inline-block;
+//   position: absolute;
+//   width: 20px;
+//   height: 30px;
+//   content: " ";
+// }
 
-@mixin common-title-text-before {
-	border-left: solid 5px #11a171;
-	border-top: solid 5px #11a171;
-	top:0;
-	left: 0;  
-}
+// @mixin common-title-text-before {
+// 	border-left: solid 5px #11a171;
+// 	border-top: solid 5px #11a171;
+// 	top:0;
+// 	left: 0;  
+// }
 
-@mixin common-title-text-after {
-	border-right: solid 5px #11a171;
-	border-bottom: solid 5px #11a171;
-	bottom:0;
-	right: 0;  
-}
+// @mixin common-title-text-after {
+// 	border-right: solid 5px #11a171;
+// 	border-bottom: solid 5px #11a171;
+// 	bottom:0;
+// 	right: 0;  
+// }
 
 // @media
 $pc: 992px;
@@ -149,18 +150,18 @@ body {
 /* about ------------------------------------------------------------ */
 .about-title {
   @include common-title;
-  h2{
-    @include common-title-text;
-    &:before,&:after {
-      @include common-title-text-before-after;
-    }
-    &:before {
-      @include common-title-text-before;
-    }
-    &:after {
-      @include common-title-text-after;
-    }
-  }
+  // h2{
+  //   @include common-title-text;
+  //   &:before,&:after {
+  //     @include common-title-text-before-after;
+  //   }
+  //   &:before {
+  //     @include common-title-text-before;
+  //   }
+  //   &:after {
+  //     @include common-title-text-after;
+  //   }
+  // }
 }
 
 .about-wrap {
@@ -230,18 +231,18 @@ body {
     background-color: #F8F9FA;
     .works-title {
       @include common-title;
-      h2{
-        @include common-title-text;
-        &:before,&:after {
-          @include common-title-text-before-after;
-        }
-        &:before {
-          @include common-title-text-before;
-        }
-        &:after {
-          @include common-title-text-after;
-        }
-      }
+      // h2{
+      //   @include common-title-text;
+      //   &:before,&:after {
+      //     @include common-title-text-before-after;
+      //   }
+      //   &:before {
+      //     @include common-title-text-before;
+      //   }
+      //   &:after {
+      //     @include common-title-text-after;
+      //   }
+      // }
     }
     .works-item-wrap {
       display: flex;
@@ -387,15 +388,15 @@ body {
   @include common-title;
   h2{
     @include common-title-text;
-    &:before,&:after {
-      @include common-title-text-before-after;
-    }
-    &:before {
-      @include common-title-text-before;
-    }
-    &:after {
-      @include common-title-text-after;
-    }
+    // &:before,&:after {
+    //   @include common-title-text-before-after;
+    // }
+    // &:before {
+    //   @include common-title-text-before;
+    // }
+    // &:after {
+    //   @include common-title-text-after;
+    // }
   }
 }
 
