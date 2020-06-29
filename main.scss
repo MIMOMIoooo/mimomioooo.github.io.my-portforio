@@ -131,6 +131,9 @@ body {
   .header-logo-wrap {
     height: 556px;
     background-color: $main-color;
+    h1 {
+      display: none;
+    }
     img {
       display: block; 
       object-fit: contain;

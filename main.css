@@ -73,6 +73,10 @@ body {
   background-color: #D0F0EC;
 }
 
+.header-logo .header-logo-wrap h1 {
+  display: none;
+}
+
 .header-logo .header-logo-wrap img {
   display: block;
   object-fit: contain;
